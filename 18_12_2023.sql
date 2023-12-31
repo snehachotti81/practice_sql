@@ -1,0 +1,10 @@
+show databases;
+create database practice_18_12_2023;
+use practice_18_12_2023;
+create table employee(id int ,empname varchar(255)) ;
+INSERT into employee values (1 , "sneha");
+SELECT * FROM employee;
+INSERT into employee values (8 , "babi") ,(9, "sun") ,(7, "kusum");
+ALTER table employee ADD (date datetime);
+INSERT INTO employee (date) values( ("2000-09-29"),( "2001-09-20"),("2000-05-09"),("1999-09-02"),("2000-09-19"), ("2001-09-30"),("2000-06-09" ));
+UPDATE employee set date = "2000-02-09" where id = 1;
